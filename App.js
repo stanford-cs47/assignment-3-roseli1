@@ -8,7 +8,7 @@
 */
 
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, Dimensions, TouchableOpacity, FlatList, Linking, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, Dimensions, TouchableOpacity, FlatList, Linking, ActivityIndicator, RefreshControl } from 'react-native';
 import { Images, Colors } from './App/Themes'
 import APIRequest from './App/Config/APIRequest'
 import { material } from 'react-native-typography'

@@ -8,9 +8,9 @@
 
 import React, { Component, useState } from 'react'
 import PropTypes from 'prop-types' //consider using this!
-import { StyleSheet, View, Button, TextInput, TouchableOpacity, Dimensions } from 'react-native'
+import { StyleSheet, View, Button, TextInput, TouchableOpacity, Dimensions, Keyboard } from 'react-native'
 import { FontAwesome } from '@expo/vector-icons';
-import { Metrics, Colors } from '../Themes'
+import { Metrics, Colors } from '../Themes';
 
 import { Ionicons } from '@expo/vector-icons';
 
@@ -21,6 +21,7 @@ export default function Search(props) {
   enterSearch = () => {
     props.goSearch(searchText);
     setSearchText('');
+    Keyboard.dismiss();
   }
 
     return (
